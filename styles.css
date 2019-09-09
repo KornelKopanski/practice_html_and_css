@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrap {
+    font-family: arial;
+    font-size: 16px;
+    font-family: 'Oswald', sans-serif;
+}
+
+.main-section {
+    position: relative;
+    height: 20vh;
+    background-color: red;
+    color: white;
+}
+
+.blog-title {
+    position: absolute;
+    font-size: 40px;
+    top: 40%;
+    left: 12%;
+}
+
+.img-box {
+    width:300px;
+    height: 250px;
+}
+
+.img-box > img {
+    width: 100%;
+}
+
+.post {
+    margin-top: 20px;
+    position: relative;
+}
+
+.post-name {
+    height: 50px;
+    line-height: 50px;
+    width: 50%;
+    text-align: center;
+}
+
+.date {
+    position: absolute;
+    right: 5%;
+    top: 0;
+}
+
+.fa-pencil-square-o {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    font-size: 30px;
+}
+
+.fa-plus {
+    position: absolute;
+    top: 5%;
+    right: 10%;
+    font-size: 30px;
+}
