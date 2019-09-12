@@ -1,37 +1,65 @@
 <!DOCTYPE html>
+<!-- znacznik doctype określa nam że strona będzie stworzona w oparciu o HTML 5 -->
 <html lang="pl">
+
 <head>
+    <!-- w tagu head podajemy informacje na temat naszej strony, tytuł autor, kodowanie znaków, a także podpinamy style i wiele innych -->
     <meta charset="UTF-8">
+    <!-- zapis powyżej oznacza polskie znaki -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ten zapis jest kluczowy do wyświetlania na mobile -->
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Start</title>
     <link href="https://fonts.googleapis.com/css?family=Oswald:400,700&display=swap&subset=latin-ext" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <div class="wrap">
+        <!-- div uniwersalny pojemnik na elementy, może także pełnić funckje pojemnika na tekst itp -->
         <header class="main-section">
-                <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
-                <i class="fa fa-plus" aria-hidden="true"></i>
+            <!-- header znacznik semantyczny wskazujący na naszej stronie na takie elementy jak logo krótkie nasze prtzedstaienie typu nazwa firmy/zawód/imie i nazwisko -->
+            <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+            <i class="fa fa-plus" aria-hidden="true"></i>
             <h2 class="blog-title">Weekendowy blog</h2>
+            <!-- h2 znacznik semantyczny tytuł -->
         </header>
         <section class="post">
+            <!-- znacznik section pozwala podzielić semantycznie naszą strone na sekcje  np. artykuły, promocje, koszyk itp -->
             <h2 class="post-name">O wsi</h2>
             <div class="img-box">
                 <img src="wies.jpg" alt="">
+                <!-- znacznik img, po prostu zdjecie w alt umieszczamy napis alternatywny gdyby zdjęcie się nie wczytało -->
             </div>
-            <p class="post-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati perferendis tenetur mollitia dolorum, adipisci, tempore aut dolore dignissimos repellat tempora sapiente minima quos aliquid sint optio rem quas, recusandae dolores inventore unde ea perspiciatis enim quidem suscipit. Quo ratione eius necessitatibus, nisi placeat ipsam delectus minima reprehenderit cum neque libero dolore tempore veritatis voluptatibus possimus amet ea sed? Pariatur consectetur saepe provident est molestiae, voluptates soluta ab natus maiores exercitationem veritatis? Provident dicta modi accusantium, ut, nostrum aliquam impedit, eveniet esse illum repellat ea nihil? Velit, nobis! Quaerat expedita perferendis facilis, dolore maiores et saepe reiciendis atque beatae, dolorem ea!</p>
+            <p class="post-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati perferendis
+                tenetur mollitia dolorum, adipisci, tempore aut dolore dignissimos repellat tempora sapiente minima quos
+                aliquid sint optio rem quas, recusandae dolores inventore unde ea perspiciatis enim quidem suscipit. Quo
+                ratione eius necessitatibus, nisi placeat ipsam delectus minima reprehenderit cum neque libero dolore
+                tempore veritatis voluptatibus possimus amet ea sed? Pariatur consectetur saepe provident est molestiae,
+                voluptates soluta ab natus maiores exercitationem veritatis? Provident dicta modi accusantium, ut,
+                nostrum aliquam impedit, eveniet esse illum repellat ea nihil? Velit, nobis! Quaerat expedita
+                perferendis facilis, dolore maiores et saepe reiciendis atque beatae, dolorem ea!</p>
+            <!-- p - pojemnik na tekst element blokowy -->
             <span class="date">published 2019-08-12/19:09</span>
+            <!-- span - pojemnik na tekst element liniowy -->
         </section>
         <section class="post">
             <h2 class="post-name">O mieście</h2>
             <div class="img-box">
-                    <img src="wies.jpg" alt="">
+                <img src="wies.jpg" alt="">
             </div>
-            <p class="post-content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit animi, eos blanditiis praesentium nisi corrupti ad, ea quasi inventore excepturi deleniti sunt voluptatibus unde fugit tenetur vero repellendus! Totam quos suscipit consectetur laboriosam explicabo cupiditate, odit nobis et? Possimus debitis aut nostrum quo a molestiae accusantium molestias dicta maxime sed, suscipit ipsa deserunt excepturi id iure beatae aspernatur magnam odit earum. Libero, reprehenderit atque. Voluptatem mollitia distinctio dolorum perferendis inventore tempore quos nam, reiciendis tenetur odit vero enim praesentium necessitatibus quia pariatur repudiandae, obcaecati laudantium aliquam saepe alias possimus provident? Quas cum laborum aut tempora cumque a corrupti ipsum iste.</p>
+            <p class="post-content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit animi, eos blanditiis
+                praesentium nisi corrupti ad, ea quasi inventore excepturi deleniti sunt voluptatibus unde fugit tenetur
+                vero repellendus! Totam quos suscipit consectetur laboriosam explicabo cupiditate, odit nobis et?
+                Possimus debitis aut nostrum quo a molestiae accusantium molestias dicta maxime sed, suscipit ipsa
+                deserunt excepturi id iure beatae aspernatur magnam odit earum. Libero, reprehenderit atque. Voluptatem
+                mollitia distinctio dolorum perferendis inventore tempore quos nam, reiciendis tenetur odit vero enim
+                praesentium necessitatibus quia pariatur repudiandae, obcaecati laudantium aliquam saepe alias possimus
+                provident? Quas cum laborum aut tempora cumque a corrupti ipsum iste.</p>
             <span class="date">published 2019-08-12/19:09</span>
         </section>
     </div>
 </body>
+
 </html>

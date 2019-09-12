@@ -1,1 +1,8 @@
-nastepuje zmiana
+position: fixed; - przykleja nasz element do okna pzryglądarki i po mimo skrolowania on pozostaje cały czas dla nas widoczny np. menu.
+top, bottom, left right - właściwości na których podstawie ma byc wylioczna pozycja naszego elementu, uwaga zadziała tylko dla position: absolute; i position: fixed;
+z-index: 1; dzięki tej właściwości ustawimy nas element wyżej lub niżej w warstwie widok jeśli jest to koniezczne np menu musi być zawsze widoczne, na minus sprawi zniknięcie na plus sprawi że będzi widoczny, radzę uważać z tą właściwością, w razie co to musisz doczytać, jak nie będzi działać spróbuj dodać position: relative do elementu to nic nie zepsuje a możepomoże.
+display: none; - sprawi że element znikie
+display: inline; - element stanie się liniowy;
+display: block; - element stanie się blokowy, ważna informacja możemy zmieniać elementy blokowe na liniowe i odwrotnie
+background-color: white; tło naszego elementu
+letter-spacing: 1px; przerwa pomiędzy literami w słowie

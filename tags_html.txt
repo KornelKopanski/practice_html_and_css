@@ -1,0 +1,9 @@
+<script src=""></script> - dodawanie jpliku js do strony, robimy to tuż przed znacznikime zamykającym body </body>
+<a href="http://adres-strony">Klik na ten tekst przeniesie do adres-strony</a>
+<img src="" alt=""> znacznik dodawania zdjecia
+<code></code> tekst kodu programu - np chcemy pokazać jakiś kod pythona na naszej stronie to umieścimy go w tyc znacznikach
+<i></i> pochylenie tekstu
+<strong></strong> pogrubienie tekstu -> to powiniśmy robić w css ale jak trzeba sie użyje
+<meta> właściwości strony,umieszczay w head np. <meta charset="UTF-8"> czyli adjemy informacje że strona będzie obsługiwać polskie znaki
+
+najważniejsze znaczniki użyliśmy już w kodzie, porozmawaimy onich jeszcze nie raz i nie dwa, inne są raczej rzadko używane ale występuje ich jeszcze dużo których sam też nie znacznikime ale zawze można doszukać w internecie.

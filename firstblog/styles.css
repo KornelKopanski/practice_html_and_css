@@ -1,55 +1,56 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    margin: 0; /* margines zewnętrzny odpycha nas od sąsiada lub sąsiadów o wskazaną ilość */
+    padding: 0; /* margines wewnętrzy - pomiędzy zawartością a koncem elementu który możemy za uwarzyć nadając mu właściwość border: 1px solid black */
+    box-sizing: border-box; /* tw właściwość sprawi że jeśli ustawimy np height elementu na 30px i damy margines wewnętrzny czyli padding to element nie urośnie a zostanie zmniejszona przestrzeń elementu na content */
+    /* operator * wskazuje na wszystkie elementy na stronie, stworzyliśmy sobie reset domyślnych właściwości naszej strony */
 }
 
 .wrap {
-    font-size: 16px;
-    font-family: 'Oswald', sans-serif;
+    font-size: 16px; /* wielkość czcionki */
+    font-family: 'Oswald', sans-serif; /* rodzaj czcionki - ten font został zaimportowany z font-awesome */
 }
 
 .main-section {
-    position: relative;
-    height: 20vh;
-    background-color: red;
-    color: white;
+    position: relative; /* ta właściwość pozwala aby dzieci po otrzymaniu właściwości position: absolute pozycjonowały się względem rodzica a nie okna przeglądarki, możesz to sprawdzić usuwając tą linie i sprawdzając efekt na stronie */
+    height: 20vh; /* wysokość strony podana w jednostkach vh czyli to samo co 100% wysokości okna przeglądarki -  wysokość scrolla, 100% zawiera wysokość scrolla */
+    background-color: red; /* tło elementu */
+    color: white; /* kolor czcionki */
 }
 
 .blog-title {
-    position: absolute;
+    position: absolute; /* pozycjonowanie elementu absolutne względem rodzica dzięki position: relative */
     font-size: 40px;
-    top: 40%;
-    left: 12%;
+    top: 40%; /* 40% wysokości elementu od góry */
+    left: 12%; /* 12% szerokości elementu od lewej */
 }
 
 .img-box {
-    margin-left: 30px;
-    width:270px;
-    height: 250px;
+    margin-left: 30px; /* margines zewnętrzy od lewej */
+    width:270px; /* szerokość elementu */
+    height: 250px; /* wysokość elementu */
 }
 
 .img-box > img {
-    width: 100%;
+    width: 100%; /* szerokość w % */
 }
 
 .post {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 20px;
-    position: relative;
+    display: flex; /* mówimy rodzicowi aby był elastyczny */
+    flex-wrap: wrap; /* mówimy mu także że gdy jego dzieci się w nim nie mieszczą to niech przejdą do kolejnej lini */ 
+    margin-top: 20px; /* margines zewnętrzny od góy */
+    position: relative; /* mowimy dzieciom pozycjonujcie się względem mnie */
 }
 
 .post-name {
-    flex-basis: 100%;
-    height: 50px;
-    line-height: 50px;
-    text-align: center;
+    flex-basis: 100%; /* jeśli damy rodzicowi display: flex; to tej właściwości używamy zamiast width */
+    height: 50px; /* wysokośc elementu */
+    line-height: 50px; /* wyśrodkowanie tekstu wewnątrz elementu na osi y, trzeba pamiętać żeby tak się stało line-height musi się równać height czyli tak jak tutaj 50px */
+    text-align: center; /* wyśrodkowanie tekstu na osi x */
 }
 
 .post-content {
-    padding: 20px;
-    flex-basis: calc(100% - 300px);
+    padding: 20px; /* margines wewnętrzny do okoła zawartości */
+    flex-basis: calc(100% - 300px); /* ciekawy zapis używamy poprostu funckji calc która przyjmuje 2 parametry i zwraca nam wartość elementy mogą mieć różne jednostki kluczowe jest aby minus miał z dwóch stron spacje inaczej nie zadziała */
 }
 
 .date {
@@ -72,7 +73,7 @@
     font-size: 30px;
 }
 
-@media(max-width: 400px) {
+@media(max-width: 400px) {/* ten zapis tworzy nam warunek że dla maksymalnej rozdzielczości 400px zastosuj style napisane w środku */
     .fa-pencil-square-o {
         top: 10%;
     }
